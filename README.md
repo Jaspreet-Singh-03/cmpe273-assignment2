@@ -1,10 +1,10 @@
 # cmpe273-assignment2
 CMPE 273 Assignment 2 Repo - Spring 2020
-# **Notes for Assignment 2**
+#### **Notes for Assignment 2**
 
-# All the data persist in scantron.db (sqlite) , the file name is **Solution.py** so make sure to set the same name while running the flask application , also highlighted most important notes in screenshot in this folder
+#### All the data persist in scantron.db (sqlite) , the file name is **SOLUTION.py** so make sure to set the same name while running the flask application , also highlighted most important notes in screenshot in this folder
 
-# First, to get started the user should enter a new answer key for the test through a POST at http://127.0.0.1:5000/api/tests and body should be like this (content-type application/json for all the requests)  , the test id will be auto generated , check screenshot for more details
+#### First, to get started the user should enter a new answer key for the test through a POST at http://127.0.0.1:5000/api/tests and body should be like this (content-type application/json for all the requests)  , the test id will be auto generated , check screenshot for more details
 ```{
         "subject": "Math",
     	"answer_keys": {
@@ -17,11 +17,11 @@ CMPE 273 Assignment 2 Repo - Spring 2020
  ```  
 <img src="https://github.com/Jaspreet-Singh-03/cmpe273-assignment2/blob/master/POSTMAN_SCREENSHOTS/Adding_AnswerKey.jpg" height="800">
 
-# After adding answer keys for many test , you can view it with a GET at http://127.0.0.1:5000/api/tests to reterive all the uploaded tests and thier answer keys, check screenshot for more details
+#### After adding answer keys for many test , you can view it with a GET at http://127.0.0.1:5000/api/tests to reterive all the uploaded tests and thier answer keys, check screenshot for more details
 <img src="https://github.com/Jaspreet-Singh-03/cmpe273-assignment2/blob/master/POSTMAN_SCREENSHOTS/View_All__Subjects.jpg" height="800">
 
 
-# The student has to upload the scantron/ json object with answer key in the format below with a POST at http://127.0.0.1:5000/api/tests/<ENTER SUBJECT ID>/scantrons ( please enter the correct subject id for the corresponding  subject name) , for this code use postman with upload file as binary type , the scantron id will be auto generated , check screenshot for more detailscheck screenshot for more details 
+#### The student has to upload the scantron/ json object with answer key in the format below with a POST at http://127.0.0.1:5000/api/tests/<ENTER SUBJECT ID>/scantrons ( please enter the correct subject id for the corresponding  subject name) , for this code use postman with upload file as binary type , the scantron id will be auto generated , check screenshot for more detailscheck screenshot for more details 
 The uploaded file should have this format (same as assignment requiremetns)
 ```{
     "name": "Foo Bar",
@@ -44,5 +44,5 @@ The uploaded file should have this format (same as assignment requiremetns)
 
 <img src="https://github.com/Jaspreet-Singh-03/cmpe273-assignment2/blob/master/POSTMAN_SCREENSHOTS/View_Uploaded_Scantron.jpg" height="800">
 
-# Finally, if you want to check for all the submission for a given subject/test id , send a GET at http://127.0.0.1:5000/api/tests/<ENTER SUBJECT ID> , validation for created test only, it will give all the scantron submission associated with given test id/
+#### Finally, if you want to check for all the submission for a given subject/test id , send a GET at http://127.0.0.1:5000/api/tests/<ENTER SUBJECT ID> , validation for created test only, it will give all the scantron submission associated with given test id/
 <img src="https://github.com/Jaspreet-Singh-03/cmpe273-assignment2/blob/master/POSTMAN_SCREENSHOTS/View_With_SubjectID.jpg" height="800">
