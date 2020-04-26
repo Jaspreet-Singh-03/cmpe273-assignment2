@@ -1,6 +1,7 @@
 # cmpe273-assignment2
 CMPE 273 Assignment 2 Repo - Spring 2020
 #### **Notes for Assignment 2**
+(Link to POSTMAN Output Screenshots (instead of curl) https://github.com/Jaspreet-Singh-03/cmpe273-assignment2/tree/master/POSTMAN_SCREENSHOTS)
 
 #### All the data persist in scantron.db (sqlite) , the file name is **SOLUTION.py** so make sure to set the same name while running the flask application , also highlighted most important notes in screenshot in this folder
 
